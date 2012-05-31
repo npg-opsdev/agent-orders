@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<orders>
+    <order>
+        <customer>
+            <title>Mr</title>
+            <firstname>Spodo</firstname>
+            <lastname>Komodo</lastname>
+        </customer>
+        <orderitem>
+            <id>32</id>
+            <journal>Paper Cut Monthly</journal>
+            <start>2010-03-10</start>
+            <currency>GBP</currency>
+        </orderitem>
+    </order>
+    <order>
+        <customer>
+            <title>Dr</title>
+            <firstname>Jemima</firstname>
+            <lastname>Rackrouey</lastname>
+        </customer>
+        <orderitem>
+            <id>42</id>
+            <journal>Bee & Wasp Sting Almanac</journal>
+            <start>2010-03-01</start>
+            <currency>GBP</currency>
+        </orderitem>
+    </order>
+    <order>
+        <customer>
+            <title>Dr</title>
+            <firstname>Peewee</firstname>
+            <lastname>Stairmaster</lastname>
+        </customer>
+        <orderitem>
+            <id>13</id>
+            <journal>Stubbed Toe International</journal>
+            <start>2010-03-01</start>
+            <currency>GBP</currency>
+        </orderitem>
+    </order>
+</orders>

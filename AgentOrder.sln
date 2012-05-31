@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{898FF969-8C11-4DBA-AD5F-4B54A8C24F01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{964B6487-15DE-44A3-AF4D-C852427CBD5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{86EB1D46-B0AD-4E0D-B30C-14307B7FB049}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xml", "Xml", "{565DB1B7-0B83-408D-AA90-40D156DE39D2}"
+	ProjectSection(SolutionItems) = preProject
+		Orders2010-03-01.xml = Orders2010-03-01.xml
+		Orders2010-04-01.xml = Orders2010-04-01.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderImportTests", "tests\OrderImportTests\OrderImportTests.csproj", "{E7D62289-67F7-4492-9036-CF7D012E7F02}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AgentOrderWeb", "src\AgentOrderWeb\", "{DED92F60-C90D-47C8-9971-8B69C53A8066}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		ProjectReferences = "{AD5A2284-EF70-45A2-89DD-4662F59A2A43}|OrderImport.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/AgentOrderWeb"
+		Debug.AspNetCompiler.PhysicalPath = "src\AgentOrderWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\AgentOrderWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/AgentOrderWeb"
+		Release.AspNetCompiler.PhysicalPath = "src\AgentOrderWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\AgentOrderWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4038"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderImport", "src\OrderImport\OrderImport.csproj", "{AD5A2284-EF70-45A2-89DD-4662F59A2A43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7D62289-67F7-4492-9036-CF7D012E7F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D62289-67F7-4492-9036-CF7D012E7F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D62289-67F7-4492-9036-CF7D012E7F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7D62289-67F7-4492-9036-CF7D012E7F02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED92F60-C90D-47C8-9971-8B69C53A8066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED92F60-C90D-47C8-9971-8B69C53A8066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED92F60-C90D-47C8-9971-8B69C53A8066}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED92F60-C90D-47C8-9971-8B69C53A8066}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{AD5A2284-EF70-45A2-89DD-4662F59A2A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD5A2284-EF70-45A2-89DD-4662F59A2A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD5A2284-EF70-45A2-89DD-4662F59A2A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD5A2284-EF70-45A2-89DD-4662F59A2A43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD5A2284-EF70-45A2-89DD-4662F59A2A43} = {898FF969-8C11-4DBA-AD5F-4B54A8C24F01}
+		{E7D62289-67F7-4492-9036-CF7D012E7F02} = {964B6487-15DE-44A3-AF4D-C852427CBD5B}
+		{DED92F60-C90D-47C8-9971-8B69C53A8066} = {86EB1D46-B0AD-4E0D-B30C-14307B7FB049}
+	EndGlobalSection
+EndGlobal

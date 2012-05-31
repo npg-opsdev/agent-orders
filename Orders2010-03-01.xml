@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<orders>
+    <order>
+        <customer>
+            <title>Mr</title>
+            <firstname>Hairy</firstname>
+            <lastname>Cakelinum</lastname>
+        </customer>
+        <orderitem>
+            <id>22</id>
+            <journal>Sprains</journal>
+            <start>2010-02-03</start>
+            <currency>GBP</currency>
+        </orderitem>
+    </order>
+    <order>
+        <customer>
+            <title>Dr</title>
+            <firstname>Jerry</firstname>
+            <lastname>Twig</lastname>
+        </customer>
+        <orderitem>
+            <id>3</id>
+            <journal>Stingy Nettle Trauma International</journal>
+            <start>2010-02-01</start>
+            <currency>USD</currency>
+        </orderitem>
+    </order>
+    <order>
+        <customer>
+            <title>Mr</title>
+            <firstname>Chewy</firstname>
+            <lastname>Louie</lastname>
+        </customer>
+        <orderitem>
+            <id>17</id>
+            <journal>Sore Knee Weekly</journal>
+            <start>2010-03-01</start>
+            <currency>GBP</currency>
+        </orderitem>
+    </order>
+</orders>
