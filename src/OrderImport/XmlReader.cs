@@ -1,4 +1,5 @@
 ﻿using System.IO;
+ using System.Text.RegularExpressions;
 
 namespace OrderImport
 {
@@ -7,7 +8,13 @@ namespace OrderImport
         public string Read(string filename)
         {
             var filestream = File.OpenText(filename);
-            return filestream.ReadToEnd();
+
+            //check the entity reference (&) and replace it 
+            
+            string content = Regex.Replace(filestream.ReadToEnd(), "&(?!(amp|apos|quot|lt|gt);)", "&amp;");
+
+            filestream.Close();
+            return content;
         }
     }
 }
