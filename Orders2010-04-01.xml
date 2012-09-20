@@ -21,7 +21,7 @@
         </customer>
         <orderitem>
             <id>42</id>
-            <journal>Bee & Wasp Sting Almanac</journal>
+            <journal>Bee &amp; Wasp Sting Almanac</journal>
             <start>2010-03-01</start>
             <currency>GBP</currency>
         </orderitem>
