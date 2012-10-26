@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{898FF969-8C11-4DBA-AD5F-4B54A8C24F01}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{964B6487-15DE-44A3-AF4D-C852427CBD5B}"
@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderImportTests", "tests\O
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AgentOrderWeb", "src\AgentOrderWeb\", "{DED92F60-C90D-47C8-9971-8B69C53A8066}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFramework = "3.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
 		ProjectReferences = "{AD5A2284-EF70-45A2-89DD-4662F59A2A43}|OrderImport.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/AgentOrderWeb"
 		Debug.AspNetCompiler.PhysicalPath = "src\AgentOrderWeb\"
