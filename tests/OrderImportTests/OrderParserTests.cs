@@ -19,21 +19,21 @@ namespace OrderImportTests
             OrderParser = new OrderParser();
 
             XmlTest1 = 
-            "<orders>" +
-                "<order>" +
-                    "<customer>" +
-                        "<title>Mr</title>" +
-                        "<firstname>Canabrana</firstname>" +
-                        "<lastname>Lammer</lastname>" +
-                    "</customer>" +
-                    "<orderitem>" +
-                        "<id>26</id>" +
-                        "<journal>Splinter Removal Weekly</journal>" +
-                        "<start>2009-01-01</start>" +
-                        "<currency>GBP</currency>" +
-                    "</orderitem>" +
-                "</order>" +
-            "</orders>";
+            @"<orders>
+               <order>
+                    <customer>
+                        <title>Mr</title>
+                        <firstname>Canabrana</firstname>
+                        <lastname>Lammer</lastname>
+                    </customer>
+                    <orderitem>
+                        <id>26</id>
+                        <journal>Splinter Removal Weekly</journal>
+                        <start>2009-01-01</start>
+                        <currency>GBP</currency>
+                    </orderitem>
+                </order>
+            </orders>";
         }
 
         //TODO Need to add more tests. I'm only testing one order
@@ -45,12 +45,12 @@ namespace OrderImportTests
             var orderList = new List<Order>(orders);
             Assert.AreEqual(orderList.Count, 1);
             Assert.AreEqual(orderList[0].Title, "Mr");
-            Assert.AreEqual(orderList[0].FirstName,"Canabrana");
-            Assert.AreEqual(orderList[0].LastName,"Lammer");
+            Assert.AreEqual(orderList[0].FirstName, "Canabrana");
+            Assert.AreEqual(orderList[0].LastName, "Lammer");
             Assert.AreEqual(orderList[0].JournalId, 26);
             Assert.AreEqual(orderList[0].JournalName, "Splinter Removal Weekly");
             Assert.AreEqual(orderList[0].Currency, "GBP");
-            Assert.AreEqual(orderList[0].StartDate.ToShortDateString(),"01/01/2009");
+            Assert.AreEqual(orderList[0].StartDate.ToShortDateString(), Convert.ToDateTime("01/01/2009").ToShortDateString());
         }
     }
 }
