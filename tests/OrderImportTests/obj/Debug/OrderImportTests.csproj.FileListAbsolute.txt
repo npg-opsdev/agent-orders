@@ -1,0 +1,9 @@
+C:\Users\Doug\agent-orders\tests\OrderImportTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Doug\agent-orders\tests\OrderImportTests\bin\Debug\OrderImportTests.dll
+C:\Users\Doug\agent-orders\tests\OrderImportTests\bin\Debug\OrderImportTests.pdb
+C:\Users\Doug\agent-orders\tests\OrderImportTests\bin\Debug\nunit.framework.dll
+C:\Users\Doug\agent-orders\tests\OrderImportTests\bin\Debug\OrderImport.dll
+C:\Users\Doug\agent-orders\tests\OrderImportTests\bin\Debug\nunit.framework.xml
+C:\Users\Doug\agent-orders\tests\OrderImportTests\bin\Debug\OrderImport.pdb
+C:\Users\Doug\agent-orders\tests\OrderImportTests\obj\Debug\OrderImportTests.dll
+C:\Users\Doug\agent-orders\tests\OrderImportTests\obj\Debug\OrderImportTests.pdb

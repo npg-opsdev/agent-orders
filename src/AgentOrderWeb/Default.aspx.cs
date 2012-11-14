@@ -21,6 +21,9 @@ public partial class _Default : System.Web.UI.Page
 
             var reader = new XmlReader();
             string orderXml = reader.Read(path);
+
+            //orderXml = orderXml.Replace("&", "&amp;");
+
             var parser = new OrderParser();
             var orderItems = parser.Parse(orderXml);
             

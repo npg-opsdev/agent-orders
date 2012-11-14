@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security;
 using System.Xml.Linq;
+using System.Text.RegularExpressions;
+using System.Web;
 
 namespace OrderImport
 {
@@ -10,7 +12,13 @@ namespace OrderImport
     {
         public IEnumerable<Order> Parse(string orderXml)
         {
-            var orderElements = XElement.Parse(orderXml);
+            string xmlPattern = "(?<start>>)(?<content>.+?(?<!>))(?<end><)|(?<start>\")(?<content>.+?)(?<end>\")";
+            string xmlResult = Regex.Replace(orderXml, xmlPattern, m =>
+                        m.Groups["start"].Value +
+                        HttpUtility.HtmlEncode(HttpUtility.HtmlDecode(m.Groups["content"].Value)) +
+                        m.Groups["end"].Value);
+
+            var orderElements = XElement.Parse(xmlResult);
             var orders = from order in orderElements.Elements()
                          select
                              new Order
